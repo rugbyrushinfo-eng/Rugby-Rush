@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { standings } from '@/data/mockData';
 import { clubsData } from '@/data/clubsData';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '../components/ui/card';
 import { Trophy, MapPin, ExternalLink } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 

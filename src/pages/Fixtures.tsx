@@ -1,6 +1,6 @@
 
 import { fixtures } from '@/data/mockData';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, Clock, Trophy } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
