@@ -11,7 +11,7 @@ import Logs from './pages/Logs';
 import Store from './pages/Store';
 import Memes from './pages/Memes';
 import { AppProvider } from './context/AppContext';
-import { AdminPanel } from './components/admin/AdminPanel';
+import AdminPortal from './pages/Admin';
 
 // Placeholder Pages
 const News = () => <div className="p-12 text-center h-[50vh]"><h1>News Coming Soon</h1></div>;
@@ -21,18 +21,22 @@ export default function App() {
   return (
     <AppProvider>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/fixtures" element={<Fixtures />} />
-            <Route path="/logs" element={<Logs />} />
-            <Route path="/memes" element={<Memes />} />
-            <Route path="/store" element={<Store />} />
-            <Route path="/community" element={<Community />} />
-          </Routes>
-        </Layout>
-        <AdminPanel />
+        <Routes>
+          <Route path="/admin" element={<AdminPortal />} />
+          <Route path="*" element={
+            <Layout>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/fixtures" element={<Fixtures />} />
+                <Route path="/logs" element={<Logs />} />
+                <Route path="/memes" element={<Memes />} />
+                <Route path="/store" element={<Store />} />
+                <Route path="/community" element={<Community />} />
+              </Routes>
+            </Layout>
+          } />
+        </Routes>
       </Router>
     </AppProvider>
   );

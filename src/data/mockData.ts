@@ -81,16 +81,16 @@ export const fixtures: Fixture[] = [
     awayLogo: 'DB',
     date: '2026-05-15',
     time: '15:30',
-    venue: 'Philip Herbstein',
+    venue: 'Constantia Sports Ground',
     league: 'Super League A',
     status: 'Upcoming'
   },
   {
     id: 'f2',
     homeTeam: 'Maties',
-    awayTeam: 'UCT Ikey Tigers',
+    awayTeam: 'Hamiltons',
     homeLogo: 'MT',
-    awayLogo: 'IK',
+    awayLogo: 'HM',
     date: '2026-05-15',
     time: '19:00',
     venue: 'Danie Craven Stadium',
@@ -110,19 +110,71 @@ export const fixtures: Fixture[] = [
     status: 'Finished',
     homeScore: 31,
     awayScore: 28
+  },
+  {
+    id: 'f4',
+    homeTeam: 'Villager',
+    awayTeam: 'SK Walmers',
+    homeLogo: 'VL',
+    awayLogo: 'SK',
+    date: '2026-05-17',
+    time: '15:30',
+    venue: 'Brookside',
+    league: 'Super League A',
+    status: 'Upcoming'
   }
 ];
 
 export const standings: LeagueTable[] = [
-  // ... existing standings
   {
     league: 'Super League A',
     standings: [
-      { rank: 1, team: 'Maties', played: 5, won: 5, drawn: 0, lost: 0, points: 25, diff: 120 },
-      { rank: 2, team: 'False Bay', played: 5, won: 4, drawn: 0, lost: 1, points: 20, diff: 85 },
-      { rank: 3, team: 'Durbell', played: 5, won: 3, drawn: 1, lost: 1, points: 17, diff: 45 },
-      { rank: 4, team: 'Hamiltons', played: 5, won: 3, drawn: 0, lost: 2, points: 15, diff: 12 },
-      { rank: 5, team: 'Villagers', played: 5, won: 2, drawn: 1, lost: 2, points: 12, diff: -5 }
+      { rank: 1, team: 'Maties', played: 8, won: 8, drawn: 0, lost: 0, points: 40, diff: 210 },
+      { rank: 2, team: 'False Bay', played: 8, won: 7, drawn: 0, lost: 1, points: 34, diff: 145 },
+      { rank: 3, team: 'Durbell', played: 8, won: 6, drawn: 0, lost: 2, points: 29, diff: 98 },
+      { rank: 4, team: 'Hamiltons', played: 8, won: 5, drawn: 0, lost: 3, points: 26, diff: 45 },
+      { rank: 5, team: 'Tygerberg', played: 8, won: 4, drawn: 1, lost: 3, points: 23, diff: 12 },
+      { rank: 6, team: 'Villager', played: 8, won: 4, drawn: 0, lost: 4, points: 21, diff: -5 },
+      { rank: 7, team: 'Brackenfell', played: 8, won: 3, drawn: 1, lost: 4, points: 18, diff: -12 },
+      { rank: 8, team: 'Uni-Mil', played: 8, won: 3, drawn: 0, lost: 5, points: 15, diff: -30 },
+      { rank: 9, team: 'SK Walmers', played: 8, won: 2, drawn: 1, lost: 5, points: 12, diff: -65 },
+      { rank: 10, team: 'NTK', played: 8, won: 2, drawn: 0, lost: 6, points: 10, diff: -80 },
+      { rank: 11, team: 'Helderberg', played: 8, won: 1, drawn: 1, lost: 6, points: 8, diff: -110 },
+      { rank: 12, team: 'Kuilsriver', played: 8, won: 1, drawn: 0, lost: 7, points: 6, diff: -140 }
+    ]
+  },
+  {
+    league: 'Super League B',
+    standings: [
+      { rank: 1, team: 'Bellville', played: 8, won: 7, drawn: 1, lost: 0, points: 36, diff: 180 },
+      { rank: 2, team: 'Hands & Heart', played: 8, won: 7, drawn: 0, lost: 1, points: 33, diff: 120 },
+      { rank: 3, team: 'Kraaifontein', played: 8, won: 6, drawn: 0, lost: 2, points: 28, diff: 85 },
+      { rank: 4, team: 'Franschhoek', played: 8, won: 5, drawn: 1, lost: 2, points: 27, diff: 45 },
+      { rank: 5, team: 'Goodwood', played: 8, won: 5, drawn: 0, lost: 3, points: 24, diff: 20 },
+      { rank: 6, team: 'Collegians', played: 8, won: 4, drawn: 0, lost: 4, points: 20, diff: -10 },
+      { rank: 7, team: 'Vineyards', played: 8, won: 3, drawn: 1, lost: 4, points: 17, diff: -25 },
+      { rank: 8, team: 'Rangers', played: 8, won: 3, drawn: 0, lost: 5, points: 14, diff: -50 },
+      { rank: 9, team: 'Pniel Villagers', played: 8, won: 2, drawn: 1, lost: 5, points: 12, diff: -70 },
+      { rank: 10, team: 'Young Peoples', played: 8, won: 2, drawn: 0, lost: 6, points: 10, diff: -90 },
+      { rank: 11, team: 'Belhar', played: 8, won: 1, drawn: 0, lost: 7, points: 6, diff: -120 },
+      { rank: 12, team: 'Busy Bees', played: 8, won: 0, drawn: 1, lost: 7, points: 2, diff: -160 }
+    ]
+  },
+  {
+    league: 'Super League C',
+    standings: [
+      { rank: 1, team: 'All Saints', played: 8, won: 8, drawn: 0, lost: 0, points: 40, diff: 200 },
+      { rank: 2, team: 'Elsies River', played: 8, won: 6, drawn: 1, lost: 1, points: 30, diff: 110 },
+      { rank: 3, team: 'Eersterivier', played: 8, won: 6, drawn: 0, lost: 2, points: 28, diff: 90 },
+      { rank: 4, team: 'Kylemore', played: 8, won: 5, drawn: 1, lost: 2, points: 26, diff: 50 },
+      { rank: 5, team: 'Langa', played: 8, won: 5, drawn: 0, lost: 3, points: 23, diff: 10 },
+      { rank: 6, team: 'Masiphumelele', played: 8, won: 4, drawn: 0, lost: 4, points: 18, diff: -5 },
+      { rank: 7, team: 'Blue Jets', played: 8, won: 3, drawn: 1, lost: 4, points: 16, diff: -20 },
+      { rank: 8, team: 'Whistling Wheels', played: 8, won: 3, drawn: 0, lost: 5, points: 14, diff: -45 },
+      { rank: 9, team: 'Primrose', played: 8, won: 2, drawn: 1, lost: 5, points: 11, diff: -75 },
+      { rank: 10, team: 'Strand', played: 8, won: 2, drawn: 0, lost: 6, points: 9, diff: -95 },
+      { rank: 11, team: 'Sir Lowrians', played: 8, won: 1, drawn: 0, lost: 7, points: 5, diff: -130 },
+      { rank: 12, team: 'Faure', played: 8, won: 0, drawn: 1, lost: 7, points: 2, diff: -180 }
     ]
   }
 ];

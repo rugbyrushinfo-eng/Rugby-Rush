@@ -11,10 +11,10 @@
     --font-sans: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 
-    --color-rugby-green: #2E7D32;
-    --color-rugby-gold: #C5A059;
-    --color-rugby-black: #0A0C0B;
-    --color-rugby-charcoal: #1A1D1B;
+    --color-rugby-blue: #004B91;
+    --color-rugby-white: #FFFFFF;
+    --color-rugby-black: #050607;
+    --color-rugby-charcoal: #121417;
 
     --color-sidebar-ring: var(--sidebar-ring);
     --color-sidebar-border: var(--sidebar-border);
@@ -58,34 +58,34 @@
     --card-foreground: #050505;
     --popover: #ffffff;
     --popover-foreground: #050505;
-    --primary: #2E7D32;
+    --primary: #004B91;
     --primary-foreground: #ffffff;
-    --secondary: #C5A059;
+    --secondary: #f4f4f5;
     --secondary-foreground: #050505;
     --muted: #f4f4f5;
     --muted-foreground: #71717a;
     --accent: #f4f4f5;
-    --accent-foreground: #2E7D32;
+    --accent-foreground: #004B91;
     --destructive: #ef4444;
     --border: #e4e4e7;
     --input: #e4e4e7;
-    --ring: #2E7D32;
-    --chart-1: #2E7D32;
-    --chart-2: #C5A059;
+    --ring: #004B91;
+    --chart-1: #004B91;
+    --chart-2: #ffffff;
     --radius: 0.75rem;
 }
 
 .dark {
-    --background: #0A0C0B;
+    --background: #050607;
     --foreground: #ffffff;
-    --card: #1A1D1B;
+    --card: #121417;
     --card-foreground: #ffffff;
-    --popover: #1A1D1B;
+    --popover: #121417;
     --popover-foreground: #ffffff;
-    --primary: #2E7D32;
+    --primary: #004B91;
     --primary-foreground: #ffffff;
-    --secondary: #C5A059;
-    --secondary-foreground: #050505;
+    --secondary: #121417;
+    --secondary-foreground: #ffffff;
     --muted: #18181b;
     --muted-foreground: #a1a1aa;
     --accent: #18181b;
@@ -93,7 +93,7 @@
     --destructive: #7f1d1d;
     --border: rgba(255, 255, 255, 0.05);
     --input: rgba(255, 255, 255, 0.1);
-    --ring: #2E7D32;
+    --ring: #004B91;
 }
 
 @layer base {
@@ -116,11 +116,11 @@
 }
 
 .label-tag {
-  @apply bg-rugby-green text-white text-[10px] font-bold px-2 py-0.5 uppercase rounded w-fit;
+  @apply bg-rugby-blue text-white text-[10px] font-bold px-2 py-0.5 uppercase rounded w-fit;
 }
 
 .match-card-bento {
-  @apply bg-white/[0.03] border-l-3 border-rugby-gold p-2 mb-2;
+  @apply bg-white/[0.03] border-l-3 border-rugby-blue p-2 mb-2;
 }
 
 .skew-card {
@@ -128,5 +128,15 @@
 }
 
 .rugby-gradient {
-  background: linear-gradient(90deg, #2E7D32, #C5A059);
+  background: linear-gradient(90deg, #004B91, #0066CC);
+}
+
+.wp-hoops {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #004B91,
+    #004B91 40px,
+    #FFFFFF 40px,
+    #FFFFFF 80px
+  );
 }
